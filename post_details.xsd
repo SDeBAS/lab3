@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Post_Details">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="post" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:integer"></xs:element>
+                            <xs:element name="name" type="xs:string"></xs:element>
+                            <xs:element name="date">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:date">
+                                        <xs:minExclusive value="2022-11-22"></xs:minExclusive>
+                                        <xs:maxInclusive value="2022-11-30"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="time" type="xs:time"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="pid" type="xs:integer"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="MyID">
+            <xs:selector xpath="post" />
+            <xs:field xpath="@pid" />
+        </xs:unique>
+    </xs:element>
+</xs:schema>

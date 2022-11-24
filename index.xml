@@ -1,0 +1,38 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<?xml-model href="post_details.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="post_details.xsl" type="text/xsl"?>
+<?xml-stylesheet href="./post_details.css" type="text/css"?>
+
+<Post_Details>
+
+    <post pid="1">
+        <id>1</id>
+        <name>Debanjan Basu</name>
+        <date>2022-11-24</date>
+        <time>23:52:00</time>
+    </post>
+
+    <post pid="2">
+        <id>2</id>
+        <name>Ayushya Chongder</name>
+        <date>2022-11-30</date>
+        <time>21:32:00</time>
+    </post>
+
+    <post pid="3">
+        <id>3</id>
+        <name>Sagnik Mukhopadhyay</name>
+        <date>2022-11-30</date>
+        <time>21:32:00</time>
+    </post>
+
+    <post pid="4">
+        <id>4</id>
+        <name>Rajarshi Barman</name>
+        <date>2022-11-30</date>
+        <time>21:32:00</time>
+    </post>
+
+
+
+</Post_Details> 
